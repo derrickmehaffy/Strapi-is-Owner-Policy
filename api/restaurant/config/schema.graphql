@@ -1,0 +1,10 @@
+module.exports = {
+  resolver: {
+    Mutation: {
+      updateRestaurant: {
+        policies: ['isOwner'],
+        resolver: 'Restaurant.update'
+      }
+    }
+  }
+}

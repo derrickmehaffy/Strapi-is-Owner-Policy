@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "restaurant"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "owner": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "restaurants"
+    }
+  },
+  "connection": "default",
+  "collectionName": "restaurants"
+}
